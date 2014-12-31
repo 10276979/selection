@@ -1,23 +1,55 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="res/css/style.css" rel="stylesheet" />
     <script type="text/javascript">
-        (function () {
+        ; (function () {
+            var selection = function () {
+                this.obj = { "name": "张三" };
+                return this.obj;
+            };
 
 
+            selection.prototype = {
+                abc: function () {
 
+                }
+
+            };
+
+            // exports检测环境
+            if (typeof exports !== 'undefined') exports.selection = selection; // Node.js环境
+            else window.selection = selection;
 
         })(window);
 
 
+        console.log(selection());
 
     </script>
 </head>
 <body>
-    <div class="abc">
+    <div class="sel" unselectable="on" onselectstart="return false;" style="-moz-user-select: none;">
+        <div class="sel_title">请选择</div>
+        <div class="sel_data sel_data_block">
+            <ul>
+                <li>数据1</li>
+                <li>数据1</li>
+                <li>数据1</li>
+                <li>数据1</li>
+                <li>数据1</li>
+            </ul>
+        </div>
+    </div>
 
+
+    <div>
+        <select>
+            <option>111</option>
+            <option>111</option>
+        </select>
 
     </div>
 

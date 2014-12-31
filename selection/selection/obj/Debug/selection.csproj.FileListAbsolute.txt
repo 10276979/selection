@@ -1,0 +1,5 @@
+D:\MyProjects\selection\selection\selection\bin\selection.dll
+D:\MyProjects\selection\selection\selection\bin\selection.pdb
+D:\MyProjects\selection\selection\selection\obj\Debug\selection.csprojResolveAssemblyReference.cache
+D:\MyProjects\selection\selection\selection\obj\Debug\selection.dll
+D:\MyProjects\selection\selection\selection\obj\Debug\selection.pdb
